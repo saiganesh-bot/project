@@ -1,10 +1,10 @@
 
 const homelist = (req, res) => {
- res.render('locations-list', { title: 'Gymfuel' });
+ res.render('locations-list', { title: 'loc8r' });
 };
 /* GET 'Location info' page */
 const locationInfo = (req, res) => {
- res.render('locations-info', { title: 'Gymfuel' });
+ res.render('locations-info', { title: 'loc8r' });
 };
 /* GET 'Add review' page */
 const addReview = (req, res) => {
