@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
-const dbURI = 'mongodb://localhost/Loc8r';
-mongoose.connect(dbURI, {useNewUrlParser: true});
+const dbURI = process.env.MONGODB_URI;
+if (!dbURI) {
+	throw new Error('MONGODB_URI environment variable not set');
+}
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.on('connected', () => {
 console.log(`Mongoose connected to ${dbURI}`);
 });
@@ -10,27 +13,22 @@ console.log(`Mongoose connection error: ${err}`);
 mongoose.connection.on('disconnected', () => {
 console.log('Mongoose disconnected');
 });
-const gracefulShutdown = (msg, callback) => {
-mongoose.connection.close( () => {
-console.log(`Mongoose disconnected through ${msg}`);
-callback();
-});
+const gracefulShutdown = async (msg) => {
+	await mongoose.connection.close();
+	console.log(`Mongoose disconnected through ${msg}`);
 };
 // For nodemon restarts
-process.once('SIGUSR2', () => {
-gracefulShutdown('nodemon restart', () => {
-process.kill(process.pid, 'SIGUSR2');
-});
+process.once('SIGUSR2', async () => {
+	await gracefulShutdown('nodemon restart');
+	process.kill(process.pid, 'SIGUSR2');
 });
 // For app termination
-process.on('SIGINT', () => {
-gracefulShutdown('app termination', () => {
-process.exit(0);
-});
+process.on('SIGINT', async () => {
+	await gracefulShutdown('app termination');
+	process.exit(0);
 });
 // For Heroku app termination
-process.on('SIGTERM', () => {
-gracefulShutdown('Heroku app shutdown', () => {
-process.exit(0);
-});
+process.on('SIGTERM', async () => {
+	await gracefulShutdown('Heroku app shutdown');
+	process.exit(0);
 });
