@@ -1,0 +1,381 @@
+/* ================= STAR RATING STYLES ================= */
+.star-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0 1.5rem 0;
+}
+.star {
+    color: #bbb;
+    font-size: 2.2rem;
+    margin: 0 0.18em;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.star.filled {
+    color: #FFD700;
+}
+.skills-list {
+/* ================= SKILLS SECTION STYLES ================= */
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem 2.5rem;
+    font-size: 1.08rem;
+    font-weight: 500;
+    color: #333;
+}
+.skills-list li {
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    margin-bottom: 0.5rem;
+}
+.certificate-img {
+/* ================= CERTIFICATIONS SECTION STYLES ================= */
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+}
+.certificate-link {
+/* ================= CERTIFICATE LINK STYLES ================= */
+    display: inline-block;
+    margin-top: 0.7rem;
+    color: #0074d9;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.certificate-link:hover {
+    color: #ffb347;
+}
+/* ================= CERTIFICATIONS SECTION STYLES ================= */
+#certifications {
+    margin-top: 2.5rem;
+}
+.certification-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 0;
+}
+.certification {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 0;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 0;
+    margin-right: 0;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.certificate-img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.09);
+}
+/* Section title with horizontal lines */
+.section-title {
+/* ================= SECTION TITLE STYLES ================= */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0 1.5rem 0;
+}
+.section-title span {
+    font-size: 1.5rem;
+    color: #222;
+    font-weight: 600;
+    padding: 0 1.2rem;
+    position: relative;
+    background: #f4f4f4;
+    z-index: 1;
+}
+.section-title:before, .section-title:after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid #bbb;
+    margin: 0 0.5rem;
+    z-index: 0;
+}
+/* Project card spacing */
+.project {
+/* ================= PROJECT CARD STYLES ================= */
+    margin-bottom: 2.2rem;
+}
+.project:last-child {
+    margin-bottom: 0;
+}
+/* ================= PROJECTS SECTION STYLES ================= */
+#projects {
+/* ================= PROJECTS SECTION STYLES ================= */
+    margin-left: 1rem;
+}
+/* ================= HEADER SECTION STYLES ================= */
+header {
+/* ================= HEADER SECTION STYLES ================= */
+    background: #e0e0e0;
+    color: #222;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    min-height: 120px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: row-reverse;
+}
+.profile-pic {
+/* ================= PROFILE PICTURE STYLES ================= */
+    flex-shrink: 0;
+}
+.profile-pic img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    background: #fff;
+    margin-bottom: 0;
+}
+.header-content {
+/* ================= HEADER CONTENT STYLES ================= */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.header-content h1 {
+    margin: 0.1rem 0 0.1rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+.header-content h2 {
+    margin: 0.1rem 0 0.7rem 0;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #ffb347;
+    text-align: center;
+}
+.contact-info-row {
+/* ================= CONTACT INFO ROW STYLES ================= */
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.2rem;
+    justify-content: center;
+}
+.contact-col {
+/* ================= CONTACT COLUMN STYLES ================= */
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.contact-col p {
+    margin: 0.1rem 0;
+    font-size: 1rem;
+}
+.contact-col a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.contact-col a:hover {
+    color: #ffb347;
+}
+@media (max-width: 700px) {
+/* ================= RESPONSIVE STYLES ================= */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0.5rem;
+        gap: 1rem;
+    }
+    .header-content {
+        align-items: center;
+    }
+    .contact-info-row {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}
+
+/* ================= EDUCATION SECTION STYLES ================= */
+.edu-table {
+/* ================= EDUCATION TABLE STYLES ================= */
+    width: 95%;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background: none;
+}
+.edu-table th, .edu-table td {
+    border: 2.5px solid #222;
+    padding: 0.7rem 1rem;
+    text-align: left;
+    vertical-align: top;
+}
+.edu-table th {
+    background: #f7f7f7;
+    color: #222;
+    font-weight: 600;
+}
+.edu-table tr:nth-child(even) td {
+    background: #fafafa;
+}
+.edu-table td {
+    color: #444;
+}
+section#education {
+/* ================= EDUCATION SECTION STYLES ================= */
+    background: none;
+    margin: 2rem 0 0 0;
+    padding: 0;
+    border-radius: 0;
+    max-width: 100vw;
+    box-shadow: none;
+}
+section#education h2 {
+    margin-top: 0;
+    color: #222;
+    border-left: 4px solid #ffb347;
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+}
+.education-details h3 {
+/* ================= EDUCATION DETAILS STYLES ================= */
+    margin-bottom: 0.2rem;
+    color: #444;
+}
+.education-details p {
+    margin: 0.1rem 0 0.3rem 0;
+    color: #555;
+}
+.education-details ul {
+    margin: 0.5rem 0 0 1.2rem;
+    color: #333;
+}
+
+
+body {
+/* ================= BODY STYLES ================= */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #222;
+}
+header {
+    background: #e0e0e0;
+    color: #222;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    min-height: 120px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: row-reverse;
+}
+.profile-pic {
+    flex-shrink: 0;
+}
+.profile-pic img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    background: #fff;
+    margin-bottom: 0;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.header-content h1 {
+    margin: 0.1rem 0 0.1rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+.header-content h2 {
+    margin: 0.1rem 0 0.7rem 0;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #ffb347;
+    text-align: center;
+}
+.contact-info-row {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.2rem;
+    justify-content: center;
+}
+.contact-info-row {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.2rem;
+}
+.contact-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.contact-col p {
+    margin: 0.1rem 0;
+    font-size: 1rem;
+}
+.contact-col a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.contact-col a:hover {
+    color: #ffb347;
+}
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0.5rem;
+        gap: 1rem;
+    }
+    .header-content {
+        align-items: center;
+    }
+    .contact-info-row {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}
