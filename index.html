@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="profile-pic">
+            <img src="download.png" alt="Profile Picture">
+        </div>
+        <div class="header-content">
+            <h1>Sai Ganesh</h1>
+            <div class="contact-info-row">
+                <div class="contact-col">
+                    <p><a href="mailto:your.email@example.com">✉️ saiganeshyemma83@gmail.com</a></p>
+                    <p><a href="tel:+1234567890">📞 +91 9390535804</a></p>
+                </div>
+                <div class="contact-col">
+                    <p><a href="https://linkedin.com/in/yourprofile" target="_blank">🔗 linkedin.com/in/yemma-sai-ganesh</a></p>
+                    <p><a href="https://github.com/yourusername" target="_blank">💻 github.com/saiganesh-bot</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="education">
+        <div class="section-title"><span>Education</span></div>
+        <div class="education-details">
+            <table class="edu-table">
+                <thead>
+                    <tr>
+                        <th>Institution</th>
+                        <th>Course</th>
+                        <th>Score</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Anurag University</td>
+                        <td>B.Tech in Artificial Intelligence</td>
+                        <td>CGPA: 9.2/10</td>
+                        <td>2023 – 2027</td>
+                    </tr>
+                    <tr>
+                        <td>ABV Junior College</td>
+                        <td>Intermediate (MPC)</td>
+                        <td>97.2%</td>
+                        <td>2021 – 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Aryabhatta High School</td>
+                        <td>SSC</td>
+                        <td>GPA: 10/10</td>
+                        <td>2020– 2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="section-title"><span>Projects</span></div>
+        <div class="project-list">
+            <div class="project">
+                <h3 style="text-decoration: underline; display: inline;">Portfolio Website</h3>:
+                <p>A personal portfolio website to showcase my work and skills.</p>
+                <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                <a href="https://github.com/yourusername/portfolio" target="_blank">GitHub</a> |
+                <a href="#" target="_blank">Demo</a>
+            </div>
+            <div class="project">
+                <h3 style="text-decoration: underline; display: inline;">Todo App</h3>:
+                <p>A simple and intuitive todo list application for task management.</p>
+                <p><strong>Tech Stack:</strong> JavaScript, HTML, CSS</p>
+                <a href="https://github.com/yourusername/todo-app" target="_blank">GitHub</a> |
+                <a href="#" target="_blank">Demo</a>
+            </div>
+            <div class="project">
+                <h3 style="text-decoration: underline; display: inline;">Weather Dashboard</h3>:
+                <p>A dashboard to display real-time weather information for any city.</p>
+                <p><strong>Tech Stack:</strong> Python, Flask, HTML, CSS</p>
+                <a href="https://github.com/yourusername/weather-dashboard" target="_blank">GitHub</a> |
+                <a href="#" target="_blank">Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="section-title"><span>Certifications</span></div>
+        <div class="certification-list">
+            <div class="certification">
+                <img src="1-6dc090f2-1e28-4478-bc43-ef87f10da41f_page-0001.jpg" alt="Certified JavaScript Developer Certificate" class="certificate-img">
+            </div>
+            <div class="certification">
+                <img src="problem_solving_basic certificate_page-0001.jpg" alt="Python for Everybody Certificate" class="certificate-img">
+            </div>
+            <div class="certification">
+                <img src="SAMUDRALA KRANTHI KUMAR-2_page-0001.jpg" alt="Responsive Web Design Certificate" class="certificate-img">
+            </div>
+            <div class="certification">
+                <img src="SAMUDRALA KRANTHI KUMAR-3_page-0001.jpg" alt="Additional Certificate" class="certificate-img">
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="section-title"><span>Skills</span></div>
+        <div class="skills-list">
+            <ul>
+                <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                <li>Python, C, C++</li>
+                <li>React.js, Node.js, Express.js</li>
+                <li>SQL, MongoDB</li>
+                <li>Git &amp; GitHub</li>
+                <li>Responsive Web Design</li>
+                <li>Problem Solving &amp; Algorithms</li>
+            </ul>
+        </div>
+    </section>
+    <div class="star-row">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+    </div>
+    <div style="text-align:center; margin-bottom:2rem;">
+        <button id="submit-rating" style="padding:0.6rem 2.2rem; font-size:1.1rem; background:#ffb347; color:#222; border:none; border-radius:6px; font-weight:600; cursor:pointer; transition:background 0.2s;">Submit</button>
+    </div>
+    <div id="thankyou-tab" style="display:none; text-align:center; margin-top:4rem;">
+        <h2 style="color:#222; font-size:2rem; margin-bottom:1.5rem;">Thank you!</h2>
+        <button id="back-to-resume" style="padding:0.6rem 2.2rem; font-size:1.1rem; background:#0074d9; color:#fff; border:none; border-radius:6px; font-weight:600; cursor:pointer; transition:background 0.2s;">Back to Resume</button>
+    </div>
+    <script src="star-rating.js"></script>
+</body>
+</html>
